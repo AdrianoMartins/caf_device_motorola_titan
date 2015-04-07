@@ -1,10 +1,10 @@
 # system.prop for titan
 
-# radio
+# Radio
 rild.libargs=-d /dev/smd0
 rild.libpath=/system/vendor/lib/libril-qc-qmi-1.so
 
-# usb
+# USB
 ro.usb.mtp=0x2e82
 ro.usb.mtp_adb=0x2e76
 ro.usb.ptp=0x2e83
@@ -13,3 +13,9 @@ ro.usb.bpt=0x2e28
 ro.usb.bpt_adb=0x2e29
 ro.usb.bpteth=0x2e2a
 ro.usb.bpteth_adb=0x2e2b
+
+# Dual Sim Device
+ro.multi.rild=true
+persist.dsds.enabled=true
+persist.radio.multisim.config=dsds
+persist.multisim.config=dsds
